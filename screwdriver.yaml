@@ -21,7 +21,27 @@ jobs:
         steps:
             - echo hi
 
+    visibility-moloch2:
+        requires: ["visibility-moloch"]
+        steps:
+            - echo hi
+
+    visibility-moloch3:
+        requires: ["visibility-moloch2"]
+        steps:
+            - echo hi
+
     visibility-bro:
+        steps:
+            - echo hi
+
+    visibility-bro2:
+        requires: ["visibility-bro"]
+        steps:
+            - echo hi
+
+    visibility-bro3:
+        requires: ["visibility-bro"]
         steps:
             - echo hi
 
