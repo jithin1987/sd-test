@@ -1,0 +1,87 @@
+version: 4
+shared:
+  image: markinva/visibility-screwdriver-7:latest
+  environment:
+    ANSIBLE_VAULT_PASSWORD_FILE: sd_vault
+    ANSIBLE_HOST_KEY_CHECKING: false
+  secrets:
+    - VAULT_KEY
+    
+jobs:
+    main:
+        requires: []
+        steps:
+            - echo "Woot"
+
+    visibility:
+        steps:
+            - echo hi
+
+    visibility-moloch:
+        steps:
+            - echo hi
+
+    visibility-bro:
+        steps:
+            - echo hi
+
+    visibility-suricata:
+        steps:
+            - echo hi
+
+    visibility-moloch-install:
+        steps:
+            - echo hi
+
+    visibility-moloch-restart:
+        steps:
+            - echo hi
+
+    visibility-moloch-stop:
+        steps:
+            - echo hi
+
+    visibility-moloch-start:
+        steps:
+            - echo hi
+
+    visibility-moloch-cert:
+        steps:
+            - echo hi
+
+    moloch-viewer:
+        steps:
+            - echo hi
+
+    moloches:
+        steps:
+            - echo hi
+
+    moloches-iptables:
+        steps:
+            - echo hi
+
+    moloch-wise:
+        steps:
+            - echo hi
+
+    visibility-os-upgrade:
+        steps:
+            - echo hi
+
+    visibility-disk-check:
+        steps:
+            - echo hi
+
+    moloches-os-upgrade:
+        steps:
+            - echo hi
+
+    moloches-disk-check:
+        steps:
+            - echo hi
+            - echo hi
+
+    disk-check:
+        steps:
+            - echo hi
