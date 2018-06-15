@@ -45,11 +45,26 @@ jobs:
         steps:
             - echo hi
 
-    visibility-suricata:
+    visibility-suricata1:
+        steps:
+            - echo hi
+
+    visibility-suricata2:
+        steps:
+            - echo hi
+
+    visibility-suricata3:
+        requires: ["visibility-suricata1", "visibility-suricata2"]
         steps:
             - echo hi
 
     visibility-moloch-install:
+        requires: ["visibility-suricata1", "visibility-suricata2", "visibility-suricata3"]
+        steps:
+            - echo hi
+
+    visibility-moloch-install2:
+        requires: ["visibility-moloch-install2"]
         steps:
             - echo hi
 
