@@ -67,7 +67,15 @@ jobs:
         requires: ["visibility-moloch-install"]
         steps:
             - echo hi
-
+    visibility-moloch-install222222222222222222222inst2:
+        requires: ["visibility-moloch-install222222222222222222222inst"]
+        steps:
+            - echo hi
+    visibility-moloch-install222222222222222222222inst3:
+        requires: ["visibility-moloch-install222222222222222222222inst2"]
+        steps:
+            - echo hi
+            
     visibility-moloch-restart:
         steps:
             - echo hi
