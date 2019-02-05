@@ -4,15 +4,20 @@ shared:
   environment:
     ANSIBLE_VAULT_PASSWORD_FILE: sd_vault
     ANSIBLE_HOST_KEY_CHECKING: false
+    SD_ZIP_ARTIFACTS: true
   secrets:
     - VAULT_KEY
     
 jobs:
     main:
-        requires: []
+        requires: [~commit]
         steps:
-            - echo "Woot"
-
+            - echo: echo "Woot"
+            - artifacts: |
+                mkdir -p $SD_ARTIFACTS_DIR/1/2/3
+                touch $SD_ARTIFACTS_DIR/test-0
+                touch $SD_ARTIFACTS_DIR/1/test-1
+                touch $SD_ARTIFACTS_DIR/1/2/test-2
     visibility:
         steps:
             - echo hi
