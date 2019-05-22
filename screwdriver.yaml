@@ -19,6 +19,8 @@ jobs:
                 touch $SD_ARTIFACTS_DIR/test-0
                 touch $SD_ARTIFACTS_DIR/1/test-1
                 touch $SD_ARTIFACTS_DIR/1/2/test-2
+                git log
+                
     visibility:
         steps:
             - echo hi
