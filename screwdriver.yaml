@@ -2,7 +2,7 @@ version: 4
 shared:
   image: markinva/visibility-screwdriver-7:latest
   environment:
-    GIT_SHALLOW_CLONE_SINCE: "1 week ago"
+    #GIT_SHALLOW_CLONE_SINCE: "1 week ago"
     GIT_SHALLOW_CLONE_DEPTH: 10
     ANSIBLE_VAULT_PASSWORD_FILE: sd_vault
     ANSIBLE_HOST_KEY_CHECKING: false
