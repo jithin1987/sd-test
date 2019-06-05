@@ -21,6 +21,7 @@ jobs:
                 touch $SD_ARTIFACTS_DIR/1/test-1
                 touch $SD_ARTIFACTS_DIR/1/2/test-2
                 git --no-pager log
+            - sleep: sleep 1000
                 
     visibility:
         steps:
