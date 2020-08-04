@@ -13,6 +13,8 @@ shared:
 jobs:
     main:
         requires: [~commit]
+        annotations:
+          screwdriver.cd/coverageScope: 'job'
         steps:
             - echo: echo "Woot"
             - env: env
