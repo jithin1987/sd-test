@@ -15,6 +15,7 @@ jobs:
         requires: [~commit]
         steps:
             - echo: echo "Woot"
+            - env: env
             - artifacts: |
                 mkdir -p $SD_ARTIFACTS_DIR/1/2/3
                 touch $SD_ARTIFACTS_DIR/test-0
