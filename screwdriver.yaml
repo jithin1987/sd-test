@@ -16,7 +16,7 @@ jobs:
         annotations:
           screwdriver.cd/coverageScope: 'job'
         steps:
-            - echo: echo "Woot"
+            - meta: meta get build
             - env: env
             - artifacts: |
                 mkdir -p $SD_ARTIFACTS_DIR/1/2/3
